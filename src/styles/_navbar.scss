@@ -1,0 +1,26 @@
+.navbar {
+  &__lists {
+    @include flex();
+
+  }
+
+  &__list {
+   padding: .5rem;
+
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: $font-1;
+    font-size: $font-14;
+    font-weight: $font-w-500;
+    color: $black;
+
+    margin-right: 50px;
+
+    &:hover {
+      color: $blue;
+      transition: all .3s;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.header{
+  @include flex();
+
+  height: 80px;
+
+  &__logo {
+    @include logo();
+    
+    position: relative;
+    left: 215px;
+    
+    &_color {
+      color: $blue;
+
+    }
+  }
+
+  &-right {
+    &__lists {
+      list-style: none;
+
+      @include flex();
+
+    }
+
+    &__list {
+      padding: .5rem;
+      position: relative;
+      right: 70px;
+     
+    }
+
+    &__image {
+      width: 16px;
+      height: 12px;
+
+      margin-right: 10px;
+
+    }
+
+    &__link {
+      text-decoration: none;
+      font-family: $font-1;
+      font-size: $font-14;
+      font-weight: $font-w-500;
+      color: $gray;
+
+      margin-right: 10px;
+    
+      &:hover {
+        color: $blue;
+        transition: all .3s;
+      }
+    }
+  }
+}

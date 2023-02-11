@@ -1,0 +1,30 @@
+@mixin flex() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+@mixin team() {
+  width: 270px;
+  height: 368px;
+  background-color: $white;
+
+  text-align: center;
+  margin-bottom: 94px;
+}
+
+@mixin font14() {
+  font-family: $font-1;
+  font-size: $font-14;
+  font-weight: $font-w-700;
+  text-transform: uppercase;
+}
+
+@mixin logo() {
+  font-family: $font-2;
+  font-size: $font-26;
+  font-weight: $font-w-700;
+  padding: .5rem;
+
+}
